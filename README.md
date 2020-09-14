@@ -1,45 +1,19 @@
-<<<<<<< HEAD
-# anomaly-detection
+# active-learning-with-ensemble
 
-- Anomaly detection  
-  1. vanilla CNN (supervised)
-  2. resnet18 (supervised)
+- Active-learning with ensemble  
+  1. Train ensemble models.
+  2. Evaluate uncertainty using ensemble models.
+  3. Selects unlabeled samples with the highest uncertainty.
 
 - Dependencies
   - Python 3.6+
-  - PyTorch==1.3
+  - PyTorch==1.6
   - Dataset: [MVTec Anomaly Detection Dataset]
   
-  
-### Dataset structure
-
-```
-./data   
-│
-├── bottle
-│   ├── ground_truth
-│   ├── train
-│   └── test
-│
-├── carpet
-├── leather
-├── grid
-
-```
 
 ### Train model
 * Run the following command.
 ```
-python train.py --target bottle --model resnet18 -c 0 --lr 0.001
+python trainActiveLearning.py --target bottle --model resnet18 -c 0 --lr 0.001
 ```
-  
-### Reference
-1. [bayesian-optimization python library]
 
-
-[MVTec Anomaly Detection Dataset]: https://www.mvtec.com/company/research/datasets/mvtec-ad/
-[bayesian-optimization python library]: https://github.com/fmfn/BayesianOptimization
-   
-=======
-# active-learning-with-ensemble
->>>>>>> 7be7dc7e4e043845c8e9ed2b41b674c577f67a26
